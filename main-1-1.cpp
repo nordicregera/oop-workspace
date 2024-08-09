@@ -5,7 +5,7 @@ int main() {
     int size = 5;
     double minVal =  arrayMin(arr, size);
 
-    std::cout<<"the minimum value is" <<minVal<<std::endl;
+    std::cout<<"the minimum value is " <<minVal<<std::endl;
 
     return 0;
 }
