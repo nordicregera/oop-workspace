@@ -4,7 +4,7 @@
 Instrument::Instrument() :brandname("null"), type ("null"),serialcode(0) {}
 
 
-Instrument::Instrument(std::string brandname,string type, int serialcode)
+Instrument::Instrument(std::string brandname,std::string type, int serialcode)
     : brandname(brandname), type(type) ,serialcode(serialcode),{}
 
 
