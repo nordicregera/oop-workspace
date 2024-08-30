@@ -1,9 +1,9 @@
 #ifndef classname_H
 #define classname_H
 
-#include "Instrument.h"
+#include "musicshop
 
-class classname {
+class musicshop {
 private:
     int max_size;          
     int current_number;   
@@ -11,13 +11,13 @@ private:
 
 public:
    
-    classname();
+    musicshop();
 
    
-    classname(int size);
+    musicshop(int size);
 
    
-    ~classname();
+    ~musicshop();
 
     
     int get_current_number_of_numbers();
