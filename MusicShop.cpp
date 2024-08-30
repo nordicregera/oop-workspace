@@ -1,26 +1,26 @@
-#include "musicshop.h"
+#include "MusicShop.h"
 #include <iostream>
 
 
-musicshop::musicshop() : max_size(0), current_numbers(0), numbers(nullptr) {}
+MusicShop::MusicShop() : max_size(0), current_numbers(0), numbers(nullptr) {}
 
 
-musicshop::musicshop(int size) : max_size(size), current_numbers(0) {
-    numbers = new classname[max_size];
+MusicShop::MusicShop(int size) : max_size(size), current_numbers(0) {
+    numbers = new MusicShop[max_size];
 }
 
 
-musicshop::~musicshop() {
+MusicShop::~MusicShop() {
     delete[] numbers;
 }
 
 
-int musicshop::get_current_number_of_Instrument() {
+int MusicShop::get_current_number_of_Instrument() {
     return current_numbers;
 }
 
 
-bool musicshop::has_brandname(std::string brandname) {
+bool MusicShop::has_brandname(std::string brandname) {
     for (int i = 0; i < current_numbers; i++) {
         if (numbers[i].get_brandname() == brandname) {
             return true;
@@ -30,7 +30,7 @@ bool musicshop::has_brandname(std::string brandname) {
 }
 
 
-bool musicshop::has_type(std::string type) {
+bool MusicShop::has_type(std::string type) {
     for (int i = 0; i < current_numbers; i++) {
         if (numbers[i].get_type() == type) {
             return true;
@@ -45,7 +45,7 @@ Instrument* musicshop::get_numbers() {
 }
 
 
-bool musicshop::add_Instrument(Instrument new_Instrument) {
+bool MusicShop::add_Instrument(Instrument new_Instrument) {
     if (current_numbers < max_size) {
         members[current_numbers] = new_Instrument;
         current_numbers++;
