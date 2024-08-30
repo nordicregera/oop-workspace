@@ -3,7 +3,7 @@
 
 #include <string>
 
-class Instrument_H {
+class Instrument {
 private:
     std::string brandname; 
     std::string type; 
@@ -11,14 +11,14 @@ private:
 
 public:
    
-    Instrument_H();
+    Instrument();
 
    
-    Instrument(std::string brandname,std::string tyoe, int serialcode );
+    Instrument(std::string brandname,std::string type, int serialcode );
 
     std::string get_brand() const;
 
-    std::string get_Tyoe() const;  
+    std::string get_type() const;  
 
     int get_serialcode() const; 
 };
