@@ -15,8 +15,9 @@ public:
     bool parkVehicle(Vehicle* vehicle);
     void unparkVehicle(int id);
     int getCount() const;
-    int countOverstayingVehicles(int maxParkingDuration) const;  // 添加声明
+    int countOverstayingVehicles(int maxParkingDuration) const;
 };
 
-#endif
+#endif  
+
 

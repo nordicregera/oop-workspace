@@ -11,25 +11,7 @@ protected:
 public:
     Vehicle(int id);
     int getID() const;
-    virtual int getParkingDuration() const = 0; // 纯虚函数
-};
-
-class Car : public Vehicle {
-public:
-    Car(int id);
-    int getParkingDuration() const override;
-};
-
-class Bus : public Vehicle {
-public:
-    Bus(int id);
-    int getParkingDuration() const override;
-};
-
-class Motorbike : public Vehicle {
-public:
-    Motorbike(int id);
-    int getParkingDuration() const override;
+    virtual int getParkingDuration() const = 0; 
 };
 
 #endif
