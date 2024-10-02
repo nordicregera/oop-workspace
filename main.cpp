@@ -1,16 +1,12 @@
-#include "UnitTest.h"
-#include "EquivalenceTests.h"
 #include "InvoiceTest.h"
+#include "EquivalenceTests.h"
 
 int main() {
-    UnitTest unitTest;
-    unitTest.runTests();
+    InvoiceTest invoiceTest;
+    invoiceTest.runTests();
 
     EquivalenceTests equivalenceTests;
     equivalenceTests.runTests();
-
-    InvoiceTest invoiceTest;
-    invoiceTest.runTests();
 
     return 0;
 }
