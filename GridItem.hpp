@@ -15,10 +15,11 @@ public:
     static int getActiveGridItemCount();
 
     virtual ~GridItem();
+    int x, y;
 
 private:
     static int activeCount; 
-    int x, y;                     
+                         
 };
 
 #endif 

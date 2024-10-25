@@ -9,7 +9,7 @@ public:
         : Interactable(0, 0, width, height) {}
 
     bool interact(Explorer* player) override {
-        return (player->getX() == x && player->getY() == y);
+        return (player->xOffset() == x && player->yOffset() == y);
     }
 
     InteractableType getType() override {

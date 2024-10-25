@@ -8,7 +8,7 @@ private:
     int stamina;
 
 public:
-    Explorer(int gridWidth, int gridHeight) 
+    Explorer(int getGridWidth, int getGridHeight) 
         : GridItem(0, 0, 1, 1), stamina(2) {}
 
     int getStamina() {
@@ -27,7 +27,7 @@ public:
             int newY = y + yOffset;
 
             
-            if (newX >= 0 && newX < getGridWidth && newY >= 0 && newY < getGridHeight) {
+            if (newX >= 0 && newX < getGridWidth() && newY >= 0 && newY < getGridHeight()) {
                 x = newX;
                 y = newY;
                 return true;
