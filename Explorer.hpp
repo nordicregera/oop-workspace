@@ -27,7 +27,7 @@ public:
             int newY = y + yOffset;
 
             
-            if (newX >= 0 && newX < gridWidth && newY >= 0 && newY < gridHeight) {
+            if (newX >= 0 && newX < getGridWidth && newY >= 0 && newY < getGridHeight) {
                 x = newX;
                 y = newY;
                 return true;
